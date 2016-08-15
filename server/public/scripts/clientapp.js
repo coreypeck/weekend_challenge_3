@@ -120,11 +120,16 @@ function checkNumbers(){
   postNumber(makeEquation(calculationObject));
 }
 function addValue(number){
+<<<<<<< HEAD
   if (isNaN(number)) {
       numId = "#decimal";
   } else if (isNaN(number) == false) {
       numId = "#" + number;
   }
+=======
+  console.log(number);
+  numId = "#" + number;
+>>>>>>> f231e870237355aee9f3790e964238d87886d84b
   $("#number-form").children().first().append(number);
   $(numId).children().on("click", function(){
     addValue(number);

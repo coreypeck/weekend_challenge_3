@@ -13,5 +13,7 @@ router.get("/", function(req, res){
     res.send(calculatedAnswer.toString());
   }else if(parseInt(calculatedAnswer)!=calculatedAnswer){
     res.send(calculatedAnswer.toFixed(5));
-  }});
+  }
+});
+
 module.exports = router;
